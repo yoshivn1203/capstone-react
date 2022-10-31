@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+/* GLOBAL VARIABLE-------------------------------------------------------------- */
+
+:root {
+  --primary-white: #fff;
+  --primary-black: #0f0f0f;
+  --secondary-black: #1f1f1f;
+  --primary-yellow: #ffa00a;
+  --secondary-yellow: #ff950a;
+  --yellow-shadow: #f6a80079;
+  --primary-red: #ce0303;
+  --secondary-red: #ff4747;
+  --primary-green: #7bc47f;
+  --primary-blue: #1565c0;
+  --secondary-blue: #50a2ff;
+  --primary-gray: #696969;
+  --secondary-gray: #a0a0a0;
+  --dark-gray: #333333;
+  --admin-gray: #1e1e1e;
+  --light-gray: #c2c2c2;
+  --primary-transparent: #00000060;
+  --lighter-transparent: #00000034;
+  --lightest-transparent: #ffffff15;
+  --darker-transparent: #000000b0;
+  --darkest-transparent: #000000e3;
+  --primary-borderRadius: 10px;
+  --primary-boxShadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
+    rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--primary-white);
+  /* background-color: #0f0f0f; */
+  background: rgb(22, 22, 22);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: var(--primary-yellow);
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+.container {
+  max-width: 1450px;
+  margin: auto;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.section {
+  padding: 0 2rem;
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+}
