@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import bg from '../assets/tin-tuc.png';
-import '../css/news.css';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -167,8 +166,53 @@ export const Wrapper = styled.div`
       width: 100%;
     }
   }
+  .news-content{
+    display: flex;
+  }
+  .main-news{
+      display: block;
+      min-width: 60rem;
+      min-height: 10rem;
+      padding: 2rem 0px 0px 0px;
+      max-width: 60rem;
+  }
+  .news-container .MuiCard-root{
+      color: white;
+      font-weight: bold;
+      background-image: url('https://taoanhdep.com/wp-content/uploads/2022/08/65d0d901c19d92bded2e1a0defa3b95e_original.jpeg');
+  }
+  .news-content .MuiCard-root{
+      margin-bottom: 2rem;
+      max-width: 38rem;
+      min-width: 38rem;
+      max-height: 30rem;
+      min-height: 20rem;
+  }
+  .main-content .MuiCard-root{
+      min-width: 80rem;
+      max-height: 50rem;
+      min-height: 20rem;
+  }
+  .news-container .MuiCard-root Button{
+      color: aliceblue;
+      background-color: rgb(146, 48, 48);
+  }
+  .new-hot{
+      min-width: 20rem;
+      padding: 2rem 0px 0px 0px;
+  }
+  .main-news .MuiCard-root{
+      min-width: 55rem;
+  }
+  .last-news{
+      display: inline-flex;
+      max-width: 50rem;
+  }
+  .last-news .MuiCard-root{
+      min-width: 20rem;
+      margin-right: 2rem;
+  }
 `;
-
 export const DialogInfo = () => {
   let id = localStorage.getItem('id')
   return (
