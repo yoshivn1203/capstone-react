@@ -17,6 +17,10 @@ const headerNav = [
     display: 'Khuyến Mãi',
     path: '/events',
   },
+  {
+    display: 'Về chúng tôi',
+    path: '/about-us',
+  },
 ];
 
 const Header = () => {
