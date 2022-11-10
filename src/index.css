@@ -47,6 +47,12 @@ body {
   color: var(--primary-white);
   /* background-color: #0f0f0f; */
   background: rgb(22, 22, 22);
+  background: linear-gradient(
+    180deg,
+    rgb(18, 18, 18) 0%,
+    rgba(4, 11, 19, 1) 49%,
+    rgb(7, 40, 80) 100%
+  );
 }
 
 a {

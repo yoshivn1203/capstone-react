@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 
 import { Link, useLocation } from 'react-router-dom';
+import Dropdown from './Dropdown';
 import styled from 'styled-components';
 import logo from '../assets/new-logo.png';
+import { useSelector } from 'react-redux';
 
 const headerNav = [
   {
@@ -25,6 +27,7 @@ const Header = () => {
   const headerRef = useRef(null);
 
   const active = headerNav.findIndex((e) => e.path === pathname);
+  const { userInfo } = useSelector((store) => store.user);
   useEffect(() => {
     const shrinkHeader = () => {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -54,7 +57,15 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        Đăng nhập
+        {userInfo ? (
+          <Dropdown userInfo={userInfo} />
+        ) : (
+          <ul className='login'>
+            <li>
+              <Link to='/sign-in'>Đăng Nhập</Link>
+            </li>
+          </ul>
+        )}
       </div>
     </Wrapper>
   );
